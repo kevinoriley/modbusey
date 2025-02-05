@@ -19,3 +19,4 @@ A quick and dirty Modbus TCP client written in Python.
 **To do:**
 - Organize everything into functions
 - Clean up repetitive code
+- Add authentication functionality
