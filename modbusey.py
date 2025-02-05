@@ -9,9 +9,15 @@ GREEN = "\033[92m"
 RESET = "\033[0m"
 
 def main():
-    print(              "***************************************")
-    print(Fore.YELLOW + "*** Simple Python ModBus TCP Client ***")
-    print(              "***************************************")
+    print("___  ___            _ ______")
+    print("|  \\/  |           | || ___ \\")
+    print("| .  . |  ___    __| || |_/ / _   _  ___   ___  _   _ ")
+    print("| |\\/| | / _ \\  / _` || ___ \\| | | |/ __| / _ \\| | | |")
+    print("| |  | || (_) || (_| || |_/ /| |_| |\\__ \\|  __/| |_| |")
+    print("\\_|  |_/ \\___/  \\__,_|\\____/  \\__,_||___/ \\___| \\__, |")
+    print("                                                 __/ |")
+    print("                                                |___/ ")
+
     print(Fore.RED + "\nModbus Cheat Sheet:" + Style.RESET_ALL)
     print(Fore.BLUE + "Coil: " + Style.RESET_ALL + "writable boolean")
     print(Fore.BLUE + "Discrete Input: " + Style.RESET_ALL + "read-only boolean")
@@ -276,6 +282,8 @@ def main():
 
             read_response = client.read_holding_registers(register_address)
             print(f"New Register Value: {read_response.registers[0]}")
+
+
 
 if __name__ == '__main__':
     main()
